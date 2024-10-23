@@ -56,7 +56,7 @@ FROM retail_sales
 WHERE 
     category = 'Clothing'
     AND 
-    TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
+    YEAR(SALE_DATE)=2022 AND MONT(SALE_DATE)=11
     AND
     quantity >= 4
 ```
